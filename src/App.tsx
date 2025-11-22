@@ -2,8 +2,9 @@ import { useState } from 'react'
 import './App.css'
 import AxiosComponent from './components/AxiosComponent'
 import AlovaComponent from './components/AlovaComponent'
+import MatriculasComponent from './components/MatriculasComponent'
 
-type MenuOption = 'inicio' | 'axios' | 'alova';
+type MenuOption = 'inicio' | 'axios' | 'alova' | 'matriculas';
 
 function App() {
   const [selectedOption, setSelectedOption] = useState<MenuOption>('inicio')
@@ -55,11 +56,27 @@ function App() {
         >
           Alumnos (Alova)
         </button>
+        <button
+          onClick={() => setSelectedOption('matriculas')}
+          style={{
+            margin: '5px',
+            padding: '10px 20px',
+            backgroundColor: selectedOption === 'matriculas' ? '#646cff' : '#fff',
+            color: selectedOption === 'matriculas' ? '#fff' : '#000',
+            border: '1px solid #646cff',
+            cursor: 'pointer',
+            borderRadius: '4px'
+          }}
+        >
+          Matrículas (CRUD)
+        </button>
       </nav>
 
       <div>
+
         {selectedOption === 'axios' && <AxiosComponent />}
         {selectedOption === 'alova' && <AlovaComponent />}
+        {selectedOption === 'matriculas' && <MatriculasComponent />}
       </div>
     </div>
   )

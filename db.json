@@ -35,6 +35,19 @@
       "id": "2",
       "nombre": "INTEGRADOR",
       "creditos": 5
+    },
+    {
+      "id": "3",
+      "nombre": "BASE DE DATOS",
+      "creditos": 4
+    }
+  ],
+  "matriculas": [
+    {
+      "id": "5c38",
+      "alumnoId": "1",
+      "cursoId": "2",
+      "fecha": "2025-11-22"
     }
   ]
 }
