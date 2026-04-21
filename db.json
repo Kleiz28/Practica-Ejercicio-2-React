@@ -23,6 +23,12 @@
       "nombre": "Pedro Torres",
       "email": "pedro@gmail.com",
       "edad": 25
+    },
+    {
+      "id": "9004",
+      "nombre": "Brandom Ticlavilca",
+      "email": "ticla@gmail.com",
+      "edad": 60
     }
   ],
   "cursos": [
