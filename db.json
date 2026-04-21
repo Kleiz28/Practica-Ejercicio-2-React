@@ -23,6 +23,12 @@
       "nombre": "Pedro Torres",
       "email": "pedro@gmail.com",
       "edad": 25
+    },
+    {
+      "id": "6d63",
+      "nombre": "Heidy Vasquez",
+      "email": "heidy@gmail.com",
+      "edad": 20
     }
   ],
   "cursos": [
